@@ -1,0 +1,107 @@
+body,
+html {
+  height: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fcc9b9;
+}
+
+.mbg {
+  /* The image used */
+  background-image: url(image/homebanner.jpg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mbg .text-start {
+  padding-top: 4em;
+}
+
+.sakurapoint img {
+  width: 34em;
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+.border2 h2 {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #000;
+  line-height: 0.1em;
+  margin: 10px 0 20px;
+}
+
+.border2 h2 span {
+  background: #fcc9b9;
+  padding: 0 10px;
+}
+
+.hoverimgtxt:hover img {
+  filter: blur(5px);
+  transition: 0.5s;
+}
+
+.hoverimgtxt img {
+  transition: 1s;
+}
+.hoverimgtxt .card-img-top:hover :not(h2) {
+  transition: 0.5s;
+  -webkit-filter: blur(7px);
+  filter: blur(7px);
+  box-shadow: 0 0 16px cyan;
+  opacity: 1;
+  transition: 2s;
+}
+
+.hoverimgtxt h2 {
+  position: absolute;
+  top: 40%;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transition: 1s;
+  padding: 0;
+  height: 0px;
+  width: 100%;
+}
+.hoverimgtxt:hover h2 {
+  opacity: 1;
+  transition: 2s;
+}
+
+.photograph {
+  /* The image used */
+  background-image: url(image/chalkboardtemp.png);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75em;
+}
+
+/* Shiny button effect */
+.photograph:hover img {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.photograph img {
+  transition: transform 0.2s;
+}
